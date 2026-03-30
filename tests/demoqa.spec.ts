@@ -17,9 +17,7 @@ test('Fill Text Box Form', async ({ page }) => {
 test('Select Checkbox', async ({ page }) => {
 
 
-    await page.goto('https://demoqa.com/checkbox', {
-        waitUntil: 'domcontentloaded'
-    });
+    await page.goto('https://demoqa.com/checkbox');
     
     const checkbox = new CheckBox(page);
     await checkbox.selectHomeCheckbox();
@@ -30,9 +28,7 @@ test('Select Checkbox', async ({ page }) => {
 test('Double Click Button', async ({ page }) => {
 
 
-    await page.goto('https://demoqa.com/buttons', {
-        waitUntil: 'domcontentloaded'
-    });
+    await page.goto('https://demoqa.com/buttons')
      
     const button = new Button(page);
     await button.doubleClickAction();
